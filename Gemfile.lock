@@ -143,6 +143,8 @@ GEM
     net-smtp (0.5.0)
       net-protocol
     nio4r (2.7.1)
+    nokogiri (1.16.4-aarch64-linux)
+      racc (~> 1.4)
     nokogiri (1.16.4-x86_64-linux)
       racc (~> 1.4)
     parallel (1.24.0)
@@ -163,6 +165,8 @@ GEM
       nio4r (~> 2.0)
     racc (1.7.3)
     rack (3.0.10)
+    rack-cors (2.0.2)
+      rack (>= 2.0.0)
     rack-session (2.0.0)
       rack (>= 3.0.0)
     rack-test (2.1.0)
@@ -289,8 +293,8 @@ GEM
     zeitwerk (2.6.13)
 
 PLATFORMS
-  x86_64-linux
   aarch64-linux
+  x86_64-linux
 
 DEPENDENCIES
   annotate (~> 3.2)
@@ -303,6 +307,7 @@ DEPENDENCIES
   pry-nav
   pry-rails
   puma (>= 5.0)
+  rack-cors
   rails (~> 7.1.3, >= 7.1.3.2)
   rspec-rails
   rspec-sidekiq (~> 4.0)
