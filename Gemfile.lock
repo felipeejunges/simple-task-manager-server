@@ -290,6 +290,7 @@ GEM
 
 PLATFORMS
   x86_64-linux
+  aarch64-linux
 
 DEPENDENCIES
   annotate (~> 3.2)
