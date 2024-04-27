@@ -4,21 +4,17 @@ class TasksController < ApplicationController
   # GET /tasks
   def index
     @tasks = Task.all
-
-    render json: @tasks
   end
 
   # GET /tasks/1
-  def show
-    render json: @task
-  end
+  def show; end
 
   # POST /tasks
   def create
     @task = Task.new(task_params)
 
     if @task.save
-      render json: @task, status: :created, location: @task
+      render :show, status: :created, location: @task
     else
       render json: @task.errors, status: :unprocessable_entity
     end
@@ -27,7 +23,7 @@ class TasksController < ApplicationController
   # PATCH/PUT /tasks/1
   def update
     if @task.update(task_params)
-      render json: @task
+      render :show, status: :ok, location: @task
     else
       render json: @task.errors, status: :unprocessable_entity
     end
@@ -35,7 +31,11 @@ class TasksController < ApplicationController
 
   # DELETE /tasks/1
   def destroy
-    @task.destroy!
+    if @task.destroy
+      head :no_content
+    else
+      render json: @task.errors, status: :unprocessable_entity
+    end
   end
 
   private

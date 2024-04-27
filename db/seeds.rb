@@ -7,3 +7,16 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+
+def data(file_name)
+  YAML.load_file(Rails.root.join("db/seeds/#{file_name}.yml"))
+end
+  
+def tasks
+  data('tasks').each do |task|
+    Task.find_or_create_by(id: task['id'], title: task['title'])
+  end
+end
+
+tasks
