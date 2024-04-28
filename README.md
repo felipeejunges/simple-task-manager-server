@@ -33,5 +33,3 @@ Você pode testar este projeto com seu testador de API preferido no endpoint `ht
 ## Coverage
 
 ![image](https://imgur.com/a/342Kqp3)
-
-<sub><sup>Sorry about the merges not be squashed</sup></sub>
