@@ -1,7 +1,7 @@
 # Simple Task Manager Server
 [![Docker CI](https://github.com/felipeejunges/simple-library/actions/workflows/dockerci.yml/badge.svg?branch=main)](https://github.com/felipeejunges/simple-library/actions/workflows/dockerci.yml?query=branch%3Amain)
 
-É a API de gerenciamento de tarefas simples do projeto [Simple Task](https://github.com/felipeejunges/simple-task-manager)
+É a API de gerenciamento de tarefas simples do projeto [Simple Task](https://github.com/felipeejunges/simple-task-manager-server)
 
 ## Tecnologias
 
@@ -32,4 +32,6 @@ Você pode testar este projeto com seu testador de API preferido no endpoint `ht
 
 ## Coverage
 
-![image](https://imgur.com/a/342Kqp3)
+https://imgur.com/a/342Kqp3
+
+<sub><sup>Sorry about the merges not be squashed</sup></sub>
