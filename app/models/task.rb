@@ -1,5 +1,8 @@
+# frozen_string_literal: true
+
 class Task < ApplicationRecord
-    validates :title, presence: true
+  validates :title, presence: true
+  validates_length_of :title, minimum: 1, allow_blank: false
 end
 
 # == Schema Information

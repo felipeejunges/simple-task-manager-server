@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # This file should ensure the existence of records required to run the application in every environment (production,
 # development, test). The code here should be idempotent so that it can be executed at any point in every environment.
 # The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
@@ -8,11 +10,10 @@
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
 
-
 def data(file_name)
   YAML.load_file(Rails.root.join("db/seeds/#{file_name}.yml"))
 end
-  
+
 def tasks
   data('tasks').each do |task|
     Task.find_or_create_by(id: task['id'], title: task['title'])

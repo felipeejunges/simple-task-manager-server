@@ -1,5 +1,3 @@
-json.array! @tasks do |task|
-  puts "\n\npassing here\n\n"
-  json.id '2323'
-  json.title 'title'
+json.data do
+  json.array! @tasks, partial: 'tasks/task', as: :task
 end

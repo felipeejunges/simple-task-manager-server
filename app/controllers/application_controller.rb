@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class ApplicationController < ActionController::API
   before_action :set_default_response_format
   rescue_from ActiveRecord::RecordNotFound, with: :raise_bad_request
