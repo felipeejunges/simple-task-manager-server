@@ -2,6 +2,6 @@
 
 FactoryBot.define do
   factory :task do
-    title { 'Example Task' }
+    title { Faker::BossaNova.song }
   end
 end

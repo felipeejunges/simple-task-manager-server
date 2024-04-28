@@ -24,7 +24,7 @@ class TasksController < ApplicationController
 
   # PATCH/PUT /tasks/1
   def update
-    if @task.update(task_params)
+    if task_params.present? && @task.update(task_params)
       render :show, status: :ok, location: @task
     else
       render json: @task.errors, status: :unprocessable_entity
