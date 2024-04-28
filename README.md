@@ -1,7 +1,7 @@
 # Simple Task Manager Server
-[![Docker CI](https://github.com/felipeejunges/simple-library/actions/workflows/dockerci.yml/badge.svg?branch=main)](https://github.com/felipeejunges/simple-library/actions/workflows/dockerci.yml?query=branch%3Amain)
+[![Docker CI](https://github.com/felipeejunges/simple-task-manager-server/actions/workflows/dockerci.yml/badge.svg?branch=main)](https://github.com/felipeejunges/simple-task-manager-server/actions/workflows/dockerci.yml?query=branch%3Amain)
 
-É a API de gerenciamento de tarefas simples do projeto [Simple Task](https://github.com/felipeejunges/simple-task-manager-server)
+É a API de gerenciamento de tarefas simples do projeto [Simple Task Manager](https://github.com/felipeejunges/simple-task-manager-server)
 
 ## Tecnologias
 
